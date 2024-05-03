@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cae1f8;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+}
+
+/* Form stil */
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.endDate{
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f3f7fe;
+    transition: .3s;
+    color: #3b82f6;
+}
+.endDate:focus {
+    border: 1px solid #3b82f6;
+    box-shadow: 0 0 0 4px #3b83f65f
+}
+
+.todo {
+    width: 100%;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f3f7fe;
+    transition: .3s;
+    color: #3b82f6;
+  }
+  
+.todo:focus {
+    border: 1px solid #3b82f6;
+    box-shadow: 0 0 0 4px #3b83f65f
+}
+
+.record {
+    background-color: #007bff;
+    color: black;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 12px 26px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+  }
+  
+.record:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+}
+
+/* Liste stil */
+.todoList {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.todo-item {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ccc;
+    word-break: break-all;
+}
+
+.task{
+    max-width: 500px;
+}
+
+.todo-item:last-child {
+    border-bottom: none;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btns {
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+/* Desktop */
+@media(width >= 1280px){
+    .form{
+        flex-direction: row;
+    }
+    .endDate{
+        width: 15%;
+    }
+    h1{
+        font-size: 48px;
+    }
+    .buttons{
+        flex-direction: row;
+    }
+    .todo-item{
+        font-size: 16px;
+    }
+}
